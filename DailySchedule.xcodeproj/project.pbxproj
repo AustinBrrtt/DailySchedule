@@ -7,12 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9ADCCEC24C79ABA00F559AB /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ADCCEB24C79ABA00F559AB /* WeekView.swift */; };
 		D9ED4B8524C3BDE600F2094D /* DailyScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4B8424C3BDE600F2094D /* DailyScheduleApp.swift */; };
-		D9ED4B8724C3BDE600F2094D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4B8624C3BDE600F2094D /* ContentView.swift */; };
 		D9ED4B8924C3BDE700F2094D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9ED4B8824C3BDE700F2094D /* Assets.xcassets */; };
 		D9ED4B8C24C3BDE700F2094D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9ED4B8B24C3BDE700F2094D /* Preview Assets.xcassets */; };
 		D9ED4B9724C3BDE800F2094D /* DailyScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4B9624C3BDE800F2094D /* DailyScheduleTests.swift */; };
 		D9ED4BA224C3BDE800F2094D /* DailyScheduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BA124C3BDE800F2094D /* DailyScheduleUITests.swift */; };
+		D9ED4BB024C3BF5C00F2094D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BAF24C3BF5C00F2094D /* Day.swift */; };
+		D9ED4BB224C3BF7B00F2094D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BB124C3BF7B00F2094D /* Event.swift */; };
+		D9ED4BB424C3C6FF00F2094D /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BB324C3C6FF00F2094D /* DayModel.swift */; };
+		D9ED4BB824C3C84100F2094D /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BB724C3C84100F2094D /* EventView.swift */; };
+		D9ED4BBA24C3CBE600F2094D /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BB924C3CBE600F2094D /* DayView.swift */; };
+		D9ED4BBC24C3D6FC00F2094D /* LabelWorkaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BBB24C3D6FC00F2094D /* LabelWorkaround.swift */; };
+		D9ED4BC424C3D7CF00F2094D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ED4BC324C3D7CF00F2094D /* WidgetKit.framework */; };
+		D9ED4BC624C3D7CF00F2094D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ED4BC524C3D7CF00F2094D /* SwiftUI.framework */; };
+		D9ED4BC924C3D7CF00F2094D /* DailyScheduleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BC824C3D7CF00F2094D /* DailyScheduleWidget.swift */; };
+		D9ED4BCC24C3D7D000F2094D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9ED4BCB24C3D7D000F2094D /* Assets.xcassets */; };
+		D9ED4BCE24C3D7D000F2094D /* DailyScheduleWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BCA24C3D7CF00F2094D /* DailyScheduleWidget.intentdefinition */; };
+		D9ED4BCF24C3D7D000F2094D /* DailyScheduleWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BCA24C3D7CF00F2094D /* DailyScheduleWidget.intentdefinition */; };
+		D9ED4BD224C3D7D000F2094D /* DailyScheduleWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D9ED4BC124C3D7CF00F2094D /* DailyScheduleWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9ED4BD924C3DA4B00F2094D /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BB724C3C84100F2094D /* EventView.swift */; };
+		D9ED4BDA24C3DA4B00F2094D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BB124C3BF7B00F2094D /* Event.swift */; };
+		D9ED4BDB24C3DA4B00F2094D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BAF24C3BF5C00F2094D /* Day.swift */; };
+		D9ED4BDC24C3DA4B00F2094D /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BB324C3C6FF00F2094D /* DayModel.swift */; };
+		D9ED4BDE24C3E22600F2094D /* LabelWorkaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BBB24C3D6FC00F2094D /* LabelWorkaround.swift */; };
+		D9ED4BE024C3E99900F2094D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BDF24C3E99900F2094D /* Color.swift */; };
+		D9ED4BE124C3EA4B00F2094D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BDF24C3E99900F2094D /* Color.swift */; };
+		D9ED4BE324C50B6300F2094D /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ED4BE224C50B6300F2094D /* NotificationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +51,33 @@
 			remoteGlobalIDString = D9ED4B8024C3BDE600F2094D;
 			remoteInfo = DailySchedule;
 		};
+		D9ED4BD024C3D7D000F2094D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9ED4B7924C3BDE600F2094D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9ED4BC024C3D7CF00F2094D;
+			remoteInfo = DailyScheduleWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D9ED4BD624C3D7D000F2094D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D9ED4BD224C3D7D000F2094D /* DailyScheduleWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D9ADCCEB24C79ABA00F559AB /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		D9ED4B8124C3BDE600F2094D /* DailySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9ED4B8424C3BDE600F2094D /* DailyScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleApp.swift; sourceTree = "<group>"; };
-		D9ED4B8624C3BDE600F2094D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D9ED4B8824C3BDE700F2094D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9ED4B8B24C3BDE700F2094D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9ED4B8D24C3BDE700F2094D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +87,21 @@
 		D9ED4B9D24C3BDE800F2094D /* DailyScheduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyScheduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9ED4BA124C3BDE800F2094D /* DailyScheduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleUITests.swift; sourceTree = "<group>"; };
 		D9ED4BA324C3BDE800F2094D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9ED4BAF24C3BF5C00F2094D /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		D9ED4BB124C3BF7B00F2094D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D9ED4BB324C3C6FF00F2094D /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		D9ED4BB724C3C84100F2094D /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		D9ED4BB924C3CBE600F2094D /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		D9ED4BBB24C3D6FC00F2094D /* LabelWorkaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWorkaround.swift; sourceTree = "<group>"; };
+		D9ED4BC124C3D7CF00F2094D /* DailyScheduleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DailyScheduleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9ED4BC324C3D7CF00F2094D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D9ED4BC524C3D7CF00F2094D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D9ED4BC824C3D7CF00F2094D /* DailyScheduleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleWidget.swift; sourceTree = "<group>"; };
+		D9ED4BCA24C3D7CF00F2094D /* DailyScheduleWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = DailyScheduleWidget.intentdefinition; sourceTree = "<group>"; };
+		D9ED4BCB24C3D7D000F2094D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9ED4BCD24C3D7D000F2094D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9ED4BDF24C3E99900F2094D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		D9ED4BE224C50B6300F2094D /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +126,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9ED4BBE24C3D7CF00F2094D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9ED4BC624C3D7CF00F2094D /* SwiftUI.framework in Frameworks */,
+				D9ED4BC424C3D7CF00F2094D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +144,8 @@
 				D9ED4B8324C3BDE600F2094D /* DailySchedule */,
 				D9ED4B9524C3BDE800F2094D /* DailyScheduleTests */,
 				D9ED4BA024C3BDE800F2094D /* DailyScheduleUITests */,
+				D9ED4BC724C3D7CF00F2094D /* DailyScheduleWidget */,
+				D9ED4BC224C3D7CF00F2094D /* Frameworks */,
 				D9ED4B8224C3BDE600F2094D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +156,7 @@
 				D9ED4B8124C3BDE600F2094D /* DailySchedule.app */,
 				D9ED4B9224C3BDE800F2094D /* DailyScheduleTests.xctest */,
 				D9ED4B9D24C3BDE800F2094D /* DailyScheduleUITests.xctest */,
+				D9ED4BC124C3D7CF00F2094D /* DailyScheduleWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,10 +165,18 @@
 			isa = PBXGroup;
 			children = (
 				D9ED4B8424C3BDE600F2094D /* DailyScheduleApp.swift */,
-				D9ED4B8624C3BDE600F2094D /* ContentView.swift */,
+				D9ED4BB724C3C84100F2094D /* EventView.swift */,
 				D9ED4B8824C3BDE700F2094D /* Assets.xcassets */,
 				D9ED4B8D24C3BDE700F2094D /* Info.plist */,
 				D9ED4B8A24C3BDE700F2094D /* Preview Content */,
+				D9ED4BAF24C3BF5C00F2094D /* Day.swift */,
+				D9ED4BB124C3BF7B00F2094D /* Event.swift */,
+				D9ED4BB324C3C6FF00F2094D /* DayModel.swift */,
+				D9ED4BB924C3CBE600F2094D /* DayView.swift */,
+				D9ED4BBB24C3D6FC00F2094D /* LabelWorkaround.swift */,
+				D9ED4BDF24C3E99900F2094D /* Color.swift */,
+				D9ED4BE224C50B6300F2094D /* NotificationHandler.swift */,
+				D9ADCCEB24C79ABA00F559AB /* WeekView.swift */,
 			);
 			path = DailySchedule;
 			sourceTree = "<group>";
@@ -130,6 +207,26 @@
 			path = DailyScheduleUITests;
 			sourceTree = "<group>";
 		};
+		D9ED4BC224C3D7CF00F2094D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9ED4BC324C3D7CF00F2094D /* WidgetKit.framework */,
+				D9ED4BC524C3D7CF00F2094D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9ED4BC724C3D7CF00F2094D /* DailyScheduleWidget */ = {
+			isa = PBXGroup;
+			children = (
+				D9ED4BC824C3D7CF00F2094D /* DailyScheduleWidget.swift */,
+				D9ED4BCA24C3D7CF00F2094D /* DailyScheduleWidget.intentdefinition */,
+				D9ED4BCB24C3D7D000F2094D /* Assets.xcassets */,
+				D9ED4BCD24C3D7D000F2094D /* Info.plist */,
+			);
+			path = DailyScheduleWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,10 +237,12 @@
 				D9ED4B7D24C3BDE600F2094D /* Sources */,
 				D9ED4B7E24C3BDE600F2094D /* Frameworks */,
 				D9ED4B7F24C3BDE600F2094D /* Resources */,
+				D9ED4BD624C3D7D000F2094D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D9ED4BD124C3D7D000F2094D /* PBXTargetDependency */,
 			);
 			name = DailySchedule;
 			productName = DailySchedule;
@@ -186,6 +285,23 @@
 			productReference = D9ED4B9D24C3BDE800F2094D /* DailyScheduleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D9ED4BC024C3D7CF00F2094D /* DailyScheduleWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9ED4BD324C3D7D000F2094D /* Build configuration list for PBXNativeTarget "DailyScheduleWidgetExtension" */;
+			buildPhases = (
+				D9ED4BBD24C3D7CF00F2094D /* Sources */,
+				D9ED4BBE24C3D7CF00F2094D /* Frameworks */,
+				D9ED4BBF24C3D7CF00F2094D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyScheduleWidgetExtension;
+			productName = DailyScheduleWidgetExtension;
+			productReference = D9ED4BC124C3D7CF00F2094D /* DailyScheduleWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +322,9 @@
 						CreatedOnToolsVersion = 12.0;
 						TestTargetID = D9ED4B8024C3BDE600F2094D;
 					};
+					D9ED4BC024C3D7CF00F2094D = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = D9ED4B7C24C3BDE600F2094D /* Build configuration list for PBXProject "DailySchedule" */;
@@ -224,6 +343,7 @@
 				D9ED4B8024C3BDE600F2094D /* DailySchedule */,
 				D9ED4B9124C3BDE800F2094D /* DailyScheduleTests */,
 				D9ED4B9C24C3BDE800F2094D /* DailyScheduleUITests */,
+				D9ED4BC024C3D7CF00F2094D /* DailyScheduleWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +372,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9ED4BBF24C3D7CF00F2094D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9ED4BCC24C3D7D000F2094D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,8 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9ED4B8724C3BDE600F2094D /* ContentView.swift in Sources */,
+				D9ED4BBA24C3CBE600F2094D /* DayView.swift in Sources */,
+				D9ED4BCF24C3D7D000F2094D /* DailyScheduleWidget.intentdefinition in Sources */,
+				D9ED4BB224C3BF7B00F2094D /* Event.swift in Sources */,
+				D9ED4BB424C3C6FF00F2094D /* DayModel.swift in Sources */,
+				D9ED4BB824C3C84100F2094D /* EventView.swift in Sources */,
 				D9ED4B8524C3BDE600F2094D /* DailyScheduleApp.swift in Sources */,
+				D9ED4BBC24C3D6FC00F2094D /* LabelWorkaround.swift in Sources */,
+				D9ADCCEC24C79ABA00F559AB /* WeekView.swift in Sources */,
+				D9ED4BE324C50B6300F2094D /* NotificationHandler.swift in Sources */,
+				D9ED4BB024C3BF5C00F2094D /* Day.swift in Sources */,
+				D9ED4BE024C3E99900F2094D /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +417,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9ED4BBD24C3D7CF00F2094D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9ED4BDC24C3DA4B00F2094D /* DayModel.swift in Sources */,
+				D9ED4BDA24C3DA4B00F2094D /* Event.swift in Sources */,
+				D9ED4BD924C3DA4B00F2094D /* EventView.swift in Sources */,
+				D9ED4BC924C3D7CF00F2094D /* DailyScheduleWidget.swift in Sources */,
+				D9ED4BDB24C3DA4B00F2094D /* Day.swift in Sources */,
+				D9ED4BE124C3EA4B00F2094D /* Color.swift in Sources */,
+				D9ED4BDE24C3E22600F2094D /* LabelWorkaround.swift in Sources */,
+				D9ED4BCE24C3D7D000F2094D /* DailyScheduleWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +444,11 @@
 			isa = PBXTargetDependency;
 			target = D9ED4B8024C3BDE600F2094D /* DailySchedule */;
 			targetProxy = D9ED4B9E24C3BDE800F2094D /* PBXContainerItemProxy */;
+		};
+		D9ED4BD124C3D7D000F2094D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9ED4BC024C3D7CF00F2094D /* DailyScheduleWidgetExtension */;
+			targetProxy = D9ED4BD024C3D7D000F2094D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +572,7 @@
 		D9ED4BA724C3BDE800F2094D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -437,6 +595,7 @@
 		D9ED4BA824C3BDE800F2094D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +699,48 @@
 			};
 			name = Release;
 		};
+		D9ED4BD424C3D7D000F2094D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SJ2JB357J3;
+				INFOPLIST_FILE = DailyScheduleWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.austinbarrett.DailySchedule.DailyScheduleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9ED4BD524C3D7D000F2094D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SJ2JB357J3;
+				INFOPLIST_FILE = DailyScheduleWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.austinbarrett.DailySchedule.DailyScheduleWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,6 +776,15 @@
 			buildConfigurations = (
 				D9ED4BAD24C3BDE800F2094D /* Debug */,
 				D9ED4BAE24C3BDE800F2094D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9ED4BD324C3D7D000F2094D /* Build configuration list for PBXNativeTarget "DailyScheduleWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9ED4BD424C3D7D000F2094D /* Debug */,
+				D9ED4BD524C3D7D000F2094D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

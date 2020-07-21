@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct DailyScheduleApp: App {
+    @StateObject var dayModel: DayModel = DayModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeekView(week: $dayModel.days)
+                .environmentObject(dayModel)
         }
     }
 }
