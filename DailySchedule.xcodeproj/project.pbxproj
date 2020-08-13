@@ -75,6 +75,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D910020F24E5FC47004D5518 /* DailySchedule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailySchedule.entitlements; sourceTree = "<group>"; };
+		D910021024E5FC9F004D5518 /* DailyScheduleWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyScheduleWidgetExtension.entitlements; sourceTree = "<group>"; };
 		D9ADCCEB24C79ABA00F559AB /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		D9ED4B8124C3BDE600F2094D /* DailySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9ED4B8424C3BDE600F2094D /* DailyScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScheduleApp.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		D9ED4B7824C3BDE600F2094D = {
 			isa = PBXGroup;
 			children = (
+				D910021024E5FC9F004D5518 /* DailyScheduleWidgetExtension.entitlements */,
 				D9ED4B8324C3BDE600F2094D /* DailySchedule */,
 				D9ED4B9524C3BDE800F2094D /* DailyScheduleTests */,
 				D9ED4BA024C3BDE800F2094D /* DailyScheduleUITests */,
@@ -164,6 +167,7 @@
 		D9ED4B8324C3BDE600F2094D /* DailySchedule */ = {
 			isa = PBXGroup;
 			children = (
+				D910020F24E5FC47004D5518 /* DailySchedule.entitlements */,
 				D9ED4B8424C3BDE600F2094D /* DailyScheduleApp.swift */,
 				D9ED4BB724C3C84100F2094D /* EventView.swift */,
 				D9ED4B8824C3BDE700F2094D /* Assets.xcassets */,
@@ -575,6 +579,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailySchedule/DailySchedule.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DailySchedule/Preview Content\"";
 				DEVELOPMENT_TEAM = SJ2JB357J3;
@@ -598,6 +603,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DailySchedule/DailySchedule.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DailySchedule/Preview Content\"";
 				DEVELOPMENT_TEAM = SJ2JB357J3;
@@ -704,6 +710,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DailyScheduleWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJ2JB357J3;
 				INFOPLIST_FILE = DailyScheduleWidget/Info.plist;
@@ -725,6 +732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DailyScheduleWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJ2JB357J3;
 				INFOPLIST_FILE = DailyScheduleWidget/Info.plist;

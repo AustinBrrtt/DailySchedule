@@ -44,6 +44,8 @@ extension Color {
             return .black
         case .betterPink:
             return .black
+        case .betterOrange:
+            return .black
         default:
             return .primary
         }
@@ -54,4 +56,5 @@ extension Color {
     static var betterBlue = Color(red: 0.3, green: 0.7, blue: 0.9)
     static var limeGreen = Color(red: 0.75, green: 0.95, blue: 0.37)
     static var betterPink = Color(red: 1.0, green: 0.4, blue: 0.7)
+    static var betterOrange = Color(red: 1.0, green: 0.4, blue: 0)
 }

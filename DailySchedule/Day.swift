@@ -13,6 +13,12 @@ struct Day {
     }
     
     var events: [Event] = []
+    var dayOfWeek: Int
+    
+    init(dayOfWeek: Int, events: [Event]) {
+        self.dayOfWeek = dayOfWeek
+        self.events = events
+    }
     
     var eventsPairwise: [(Event, Event)] {
         var pairs: [(Event, Event)] = [(events[events.count - 1], events[0])]
@@ -20,6 +26,12 @@ struct Day {
             pairs.append((events[i], events[i + 1]))
         }
         return pairs
+    }
+    
+    func dateComponents(for event: Event) -> DateComponents {
+        var components = event.dateComponents
+        components.weekday = dayOfWeek
+        return components
     }
     
     // Assumes there are events since they are currently hardcoded
@@ -31,12 +43,13 @@ struct Day {
         }
         
         for (event, nextEvent) in eventsPairwise {
-            if now >= event.start && now < nextEvent.start {
+            if now >= event.rawStart && now < nextEvent.rawStart {
                 return event
             }
         }
         
-        return events[0] // Shouldn't ever happen, but would currenly manifest as defaulting to sleep.
+        print("There is no current event (Should not be possible)")
+        abort()
     }
     
     func upNext(_ date: Date = Date()) -> Event {
@@ -45,8 +58,8 @@ struct Day {
     }
     
     func timeUntilNextChange() -> Int {
-        let diff = Int((upNext().start + 24 - hourFor(date: Date())).remainder(dividingBy: 24))
-        return (diff * 3600) + 1
+        let diff = (upNext().start + 24 - hourFor(date: Date())).remainder(dividingBy: 24)
+        return Int((diff * 3600) + 1)
     }
     
     private func hourFor(date: Date) -> Float16 {

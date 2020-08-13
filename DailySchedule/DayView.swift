@@ -9,29 +9,20 @@ import SwiftUI
 
 struct DayView: View {
     @EnvironmentObject var model: DayModel
-    @AppStorage("hasRegisteredNotifications") var hasRegisteredNotifications: Bool = false
     @Binding var day: Day
+    @State var currentEvent: Event?
     
     var body: some View {
         ScrollView {
             VStack {
                 ForEach(day.events.indices, id: \.self) { id in
-                    EventView(event: $day.events[id], current: day.events[id] == day.currentEvent(Date()))
+                    EventView(event: $day.events[id], current: day.events[id] == currentEvent)
                 }
             }
             .padding(.bottom)
             .onAppear {
-                model.refresh()
-                if (!hasRegisteredNotifications) {
-                    NotificationHandler.registerNotifications(for: day) { successful in
-                        hasRegisteredNotifications = successful
-                    }
-                }
-            }
-            .onTapGesture {
-                // If a version of this app gets shipped, don't do this. This is so I can manually reregister notifications after making a change.
-                NotificationHandler.registerNotifications(for: day) { successful in
-                    hasRegisteredNotifications = successful
+                model.refresh {
+                    currentEvent = day.currentEvent()
                 }
             }
         }

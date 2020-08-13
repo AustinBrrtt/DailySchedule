@@ -10,14 +10,23 @@ import SwiftUI
 import Intents
 
 struct EventProvider: TimelineProvider {
-    private let dayModel = DayModel()
+    @AppStorage("dinnerTime", store: UserDefaults(suiteName: "group.io.austinbarrett.dailyschedule")) var dinnerTime: Double = 19.5
+    private let dayModel: DayModel = DayModel()
+    
+    init() {
+        dayModel.setupEvents(dinnerTime: Float16(dinnerTime))
+    }
+    
+    func placeholder(with context: Context) -> EventEntry {
+        return EventEntry(date: Date(), currentEvent: dayModel.day.currentEvent(Date()), nextEvent: dayModel.day.upNext(Date()))
+    }
     
     func snapshot(with context: Context, completion: @escaping (EventEntry) -> ()) {
-        let entry = EventEntry(date: Date(), currentEvent: dayModel.day.currentEvent(Date()), nextEvent: dayModel.day.upNext(Date()))
-        completion(entry)
+        completion(placeholder(with: context))
     }
     
     func timeline(with context: Context, completion: @escaping (Timeline<EventEntry>) -> ()) {
+        dayModel.setupEvents(dinnerTime: Float16(dinnerTime))
         var entries: [EventEntry] = []
         
         let weekDay = Day.currentWeekday
@@ -83,7 +92,7 @@ struct DailyScheduleWidget: Widget {
     private let kind: String = "io.austinbarrett.DailySchedule.widget"
 
     public var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: EventProvider(), placeholder: DailyScheduleWidgetEntryView(entry: EventEntry.placeholder)) { entry in
+        StaticConfiguration(kind: kind, provider: EventProvider()) { entry in
             DailyScheduleWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Now & Later")
